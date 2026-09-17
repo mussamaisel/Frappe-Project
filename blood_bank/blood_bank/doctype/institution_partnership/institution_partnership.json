@@ -1,0 +1,95 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:PARTNERSHIP-{#####}",
+ "creation": "2026-09-08 15:04:39.886237",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "requesting_institution",
+  "supplying_institution",
+  "status",
+  "share_stock_visibility",
+  "date_requested",
+  "date_approved",
+  "approved_by"
+ ],
+ "fields": [
+  {
+   "fieldname": "requesting_institution",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "in_list_view": 1,
+   "label": "Requesting Institution",
+   "options": "Blood Institution",
+   "reqd": 1
+  },
+  {
+   "fieldname": "supplying_institution",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "in_list_view": 1,
+   "label": "Supplying Institution",
+   "options": "Blood Institution",
+   "reqd": 1
+  },
+  {
+   "default": "Pending Approval",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Pending Approval\nApproved\nRejected\nSuspended"
+  },
+  {
+   "default": "0",
+   "fieldname": "share_stock_visibility",
+   "fieldtype": "Check",
+   "label": "Share Stock Visibility"
+  },
+  {
+   "fieldname": "date_requested",
+   "fieldtype": "Date",
+   "label": "Date Requested"
+  },
+  {
+   "fieldname": "date_approved",
+   "fieldtype": "Date",
+   "label": "Date Approved"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Link",
+   "label": "Approved By",
+   "options": "User"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-09-10 12:13:00.862344",
+ "modified_by": "Administrator",
+ "module": "Blood Bank",
+ "name": "Institution Partnership",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

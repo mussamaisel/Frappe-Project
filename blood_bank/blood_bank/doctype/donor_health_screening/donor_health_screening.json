@@ -1,0 +1,152 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:SCREEN-{#####}",
+ "creation": "2026-09-08 15:43:16.713940",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "appointment",
+  "hemoglobin_level",
+  "blood_pressure",
+  "pulse",
+  "temperature",
+  "weight_on_day",
+  "recent_illness",
+  "on_medication",
+  "medication_details",
+  "recent_travel",
+  "travel_details",
+  "risky_behavior_flag",
+  "eligibility_result",
+  "screened_by",
+  "screening_datetime",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "appointment",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Appointment",
+   "options": "Appointment",
+   "reqd": 1
+  },
+  {
+   "fieldname": "blood_pressure",
+   "fieldtype": "Data",
+   "label": "Blood Pressure"
+  },
+  {
+   "fieldname": "temperature",
+   "fieldtype": "Float",
+   "label": "Temperature"
+  },
+  {
+   "default": "0",
+   "fieldname": "recent_illness",
+   "fieldtype": "Check",
+   "label": "Recent Illness?"
+  },
+  {
+   "default": "0",
+   "fieldname": "on_medication",
+   "fieldtype": "Check",
+   "label": "On Medication?"
+  },
+  {
+   "fieldname": "medication_details",
+   "fieldtype": "Small Text",
+   "label": "Medication Details"
+  },
+  {
+   "default": "0",
+   "fieldname": "recent_travel",
+   "fieldtype": "Check",
+   "label": "Recent Travel?"
+  },
+  {
+   "fieldname": "travel_details",
+   "fieldtype": "Small Text",
+   "label": "Travel Details"
+  },
+  {
+   "fieldname": "eligibility_result",
+   "fieldtype": "Select",
+   "label": "Eligibility Result",
+   "options": "Eligible\nTemporarily Deferred\nPermanently Deferred",
+   "reqd": 1
+  },
+  {
+   "fieldname": "screened_by",
+   "fieldtype": "Link",
+   "label": "Screened By",
+   "options": "User"
+  },
+  {
+   "fieldname": "screening_datetime",
+   "fieldtype": "Datetime",
+   "label": "Screening Date/Time"
+  },
+  {
+   "fieldname": "hemoglobin_level",
+   "fieldtype": "Float",
+   "label": "Hemoglobin Level (g/dL)"
+  },
+  {
+   "fieldname": "pulse",
+   "fieldtype": "Int",
+   "label": "Pulse (bpm)"
+  },
+  {
+   "fieldname": "weight_on_day",
+   "fieldtype": "Float",
+   "label": "Weight on Day (kg)"
+  },
+  {
+   "default": "0",
+   "fieldname": "risky_behavior_flag",
+   "fieldtype": "Check",
+   "label": "Risk Flag"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Donor Health Screening",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-09-09 13:05:24.344837",
+ "modified_by": "Administrator",
+ "module": "Blood Bank",
+ "name": "Donor Health Screening",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

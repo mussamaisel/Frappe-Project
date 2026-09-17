@@ -1,0 +1,168 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:DONOR-{#####}",
+ "creation": "2026-09-08 15:12:40.800394",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "full_name",
+  "national_id",
+  "date_of_birth",
+  "gender",
+  "phone",
+  "email",
+  "address",
+  "city",
+  "region",
+  "blood_group",
+  "weight_kg",
+  "height_cm",
+  "status",
+  "deferral_reason",
+  "deferral_until",
+  "last_donation_date",
+  "next_eligible_date",
+  "total_donations",
+  "linked_user_account"
+ ],
+ "fields": [
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Full Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "national_id",
+   "fieldtype": "Data",
+   "label": "National ID",
+   "unique": 1
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Phone",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Data",
+   "label": "Region"
+  },
+  {
+   "fieldname": "blood_group",
+   "fieldtype": "Select",
+   "label": "Blood Group",
+   "options": "A+\nA-\nB+\nB-\nAB+\nAB-\nO+\nO-"
+  },
+  {
+   "fieldname": "weight_kg",
+   "fieldtype": "Float",
+   "label": "Weight (kg)"
+  },
+  {
+   "fieldname": "height_cm",
+   "fieldtype": "Float",
+   "label": "Height (cm)"
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nTemporarily Deferred\nPermanently Deferred\nBlacklisted"
+  },
+  {
+   "fieldname": "deferral_reason",
+   "fieldtype": "Small Text",
+   "label": "Deferral Reason"
+  },
+  {
+   "fieldname": "deferral_until",
+   "fieldtype": "Date",
+   "label": "Deferral Until"
+  },
+  {
+   "fieldname": "last_donation_date",
+   "fieldtype": "Date",
+   "label": "Last Donation Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "next_eligible_date",
+   "fieldtype": "Date",
+   "label": "Next Eligible Date",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "total_donations",
+   "fieldtype": "Int",
+   "label": "Total Donations",
+   "read_only": 1
+  },
+  {
+   "fieldname": "linked_user_account",
+   "fieldtype": "Link",
+   "label": "Linked User Account",
+   "options": "User"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-09-11 09:51:09.427891",
+ "modified_by": "Administrator",
+ "module": "Blood Bank",
+ "name": "Donor",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

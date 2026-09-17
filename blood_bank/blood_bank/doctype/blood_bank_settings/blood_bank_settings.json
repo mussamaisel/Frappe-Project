@@ -1,0 +1,114 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-09-08 17:18:50.364067",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "donation_interval_male",
+  "donation_interval_female",
+  "min_donor_age",
+  "max_donor_age",
+  "min_weight_kg",
+  "expiry_days_whole_blood",
+  "expiry_days_packed_red_cells",
+  "expiry_days_plasma",
+  "expiry_days_platelets",
+  "expiry_days_cryoprecipitate",
+  "low_stock_threshold_units"
+ ],
+ "fields": [
+  {
+   "default": "90",
+   "fieldname": "donation_interval_male",
+   "fieldtype": "Int",
+   "label": "Donation Interval in days (Male)"
+  },
+  {
+   "default": "120",
+   "fieldname": "donation_interval_female",
+   "fieldtype": "Int",
+   "label": "Donation Interval in days (Female)"
+  },
+  {
+   "default": "35",
+   "fieldname": "expiry_days_whole_blood",
+   "fieldtype": "Int",
+   "label": "Expiry Days (Whole Blood)"
+  },
+  {
+   "default": "42",
+   "fieldname": "expiry_days_packed_red_cells",
+   "fieldtype": "Int",
+   "label": "Expiry Days (Packed Red Cells)"
+  },
+  {
+   "default": "365",
+   "fieldname": "expiry_days_plasma",
+   "fieldtype": "Int",
+   "label": "Expiry Days (Plasma)"
+  },
+  {
+   "default": "5",
+   "fieldname": "expiry_days_platelets",
+   "fieldtype": "Int",
+   "label": "Expiry Days (Platelets"
+  },
+  {
+   "default": "365",
+   "fieldname": "expiry_days_cryoprecipitate",
+   "fieldtype": "Int",
+   "label": "Expiry Days (Cryoprecipitate)"
+  },
+  {
+   "default": "10",
+   "fieldname": "low_stock_threshold_units",
+   "fieldtype": "Int",
+   "label": "Low Stock Threshold (units)"
+  },
+  {
+   "default": "18",
+   "fieldname": "min_donor_age",
+   "fieldtype": "Int",
+   "label": "Minimum Donor Age"
+  },
+  {
+   "default": "65",
+   "fieldname": "max_donor_age",
+   "fieldtype": "Int",
+   "label": "Maximum Donor Age"
+  },
+  {
+   "default": "50",
+   "fieldname": "min_weight_kg",
+   "fieldtype": "Float",
+   "label": "Minimum Weight (kg)"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-09-08 17:38:41.779989",
+ "modified_by": "Administrator",
+ "module": "Blood Bank",
+ "name": "Blood Bank Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

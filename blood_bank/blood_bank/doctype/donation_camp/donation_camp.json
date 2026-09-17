@@ -1,0 +1,99 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:CAMP-(####)",
+ "creation": "2026-09-08 15:29:24.122833",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "tittle",
+  "section_break_9exa",
+  "organizing_institution",
+  "receiving_institution",
+  "venue",
+  "column_break_eb4n",
+  "start_datetime",
+  "end_datetime",
+  "target_units"
+ ],
+ "fields": [
+  {
+   "fieldname": "tittle",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Tittle",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "organizing_institution",
+   "fieldtype": "Link",
+   "label": "Organizing Institution",
+   "options": "Blood Institution"
+  },
+  {
+   "fieldname": "venue",
+   "fieldtype": "Data",
+   "label": "Venue",
+   "reqd": 1
+  },
+  {
+   "fieldname": "start_datetime",
+   "fieldtype": "Datetime",
+   "label": "Start Date/Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "end_datetime",
+   "fieldtype": "Datetime",
+   "label": "End Date/Time"
+  },
+  {
+   "fieldname": "target_units",
+   "fieldtype": "Int",
+   "label": "Target Units"
+  },
+  {
+   "fieldname": "receiving_institution",
+   "fieldtype": "Link",
+   "label": "Receiving Institution",
+   "options": "Blood Institution"
+  },
+  {
+   "fieldname": "section_break_9exa",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_eb4n",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-09-16 09:28:02.661114",
+ "modified_by": "Administrator",
+ "module": "Blood Bank",
+ "name": "Donation Camp",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

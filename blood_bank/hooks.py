@@ -123,9 +123,11 @@ app_license = "mit"
 # -----------
 # Permissions evaluated in scripted ways
 
-# permission_query_conditions = {
-# 	"Event": "frappe.desk.doctype.event.event.get_permission_query_conditions",
-# }
+permission_query_conditions = {
+	"Blood Request": "blood_bank.permissions.blood_request_query_conditions",
+	"Institution Partnership": "blood_bank.permissions.institution_partnership_query_conditions",
+	"Blood Issue": "blood_bank.permissions.blood_issue_query_conditions",
+}
 #
 # has_permission = {
 # 	"Event": "frappe.desk.doctype.event.event.has_permission",
@@ -151,26 +153,22 @@ app_license = "mit"
 # 	}
 # }
 
+doc_events = {
+    "User": {
+		"after_insert": "blood_bank.utils.assign_donor_role"
+	}
+}
+
+
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"blood_bank.tasks.all"
-# 	],
-# 	"daily": [
-# 		"blood_bank.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"blood_bank.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"blood_bank.tasks.weekly"
-# 	],
-# 	"monthly": [
-# 		"blood_bank.tasks.monthly"
-# 	],
-# }
+scheduler_events = {
+	"daily": [
+		"blood_bank.tasks.expire_blood_units",
+		"blood_bank.tasks.check_low_stock",
+	],
+}
 
 # Testing
 # -------

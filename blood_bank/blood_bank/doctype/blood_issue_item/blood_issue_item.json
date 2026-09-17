@@ -1,0 +1,50 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-09-08 17:00:56.148987",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "blood_unit",
+  "blood_group",
+  "component_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "blood_unit",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Blood Unit",
+   "options": "Blood Unit",
+   "reqd": 1
+  },
+  {
+   "fieldname": "blood_group",
+   "fieldtype": "Data",
+   "label": "Blood Group",
+   "read_only": 1
+  },
+  {
+   "fieldname": "component_type",
+   "fieldtype": "Data",
+   "label": "Component Type",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-09-08 17:04:15.330300",
+ "modified_by": "Administrator",
+ "module": "Blood Bank",
+ "name": "Blood Issue Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

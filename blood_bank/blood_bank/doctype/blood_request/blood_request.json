@@ -1,0 +1,127 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:REQ-{#####}",
+ "creation": "2026-09-08 16:36:02.611205",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "requesting_institution",
+  "supplying_institution",
+  "blood_group",
+  "component_type",
+  "units_needed",
+  "urgency",
+  "needed_by",
+  "reason",
+  "requires_cross_match",
+  "status",
+  "units_fulfilled"
+ ],
+ "fields": [
+  {
+   "fieldname": "requesting_institution",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "in_list_view": 1,
+   "label": "Requesting Institution",
+   "options": "Blood Institution",
+   "reqd": 1
+  },
+  {
+   "fieldname": "supplying_institution",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "in_list_view": 1,
+   "label": "Supplying Institution",
+   "options": "Blood Institution",
+   "reqd": 1
+  },
+  {
+   "fieldname": "blood_group",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Blood Group",
+   "options": "A+\nA-\nB+\nB-\nAB+\nAB-\nO+\nO-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "component_type",
+   "fieldtype": "Select",
+   "label": "Component Type",
+   "options": "Whole Blood\nPacked Red Cells\nPlasma\nPlatelets\nCryoprecipitate",
+   "reqd": 1
+  },
+  {
+   "fieldname": "units_needed",
+   "fieldtype": "Int",
+   "label": "Units Needed",
+   "reqd": 1
+  },
+  {
+   "default": "Routine",
+   "fieldname": "urgency",
+   "fieldtype": "Select",
+   "label": "Urgency",
+   "options": "Routine\nUrgent\nEmergency"
+  },
+  {
+   "fieldname": "needed_by",
+   "fieldtype": "Date",
+   "label": "Needed By"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Small Text",
+   "label": "Reason"
+  },
+  {
+   "default": "0",
+   "fieldname": "requires_cross_match",
+   "fieldtype": "Check",
+   "label": "Requires Cross Match"
+  },
+  {
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nSubmitted\nUnder Review\nApproved\nPartially Fulfilled\nFulfilled\nRejected\nCancelled"
+  },
+  {
+   "default": "0",
+   "fieldname": "units_fulfilled",
+   "fieldtype": "Int",
+   "label": "Units Fulfilled",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-09-10 12:10:59.063476",
+ "modified_by": "Administrator",
+ "module": "Blood Bank",
+ "name": "Blood Request",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
