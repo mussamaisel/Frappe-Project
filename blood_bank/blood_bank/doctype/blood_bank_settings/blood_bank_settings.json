@@ -15,7 +15,8 @@
   "expiry_days_plasma",
   "expiry_days_platelets",
   "expiry_days_cryoprecipitate",
-  "low_stock_threshold_units"
+  "low_stock_threshold_units",
+  "nbts_root_institution"
  ],
  "fields": [
   {
@@ -83,13 +84,19 @@
    "fieldname": "min_weight_kg",
    "fieldtype": "Float",
    "label": "Minimum Weight (kg)"
+  },
+  {
+   "fieldname": "nbts_root_institution",
+   "fieldtype": "Link",
+   "label": "NBTS Root Institution",
+   "options": "Blood Institution"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2026-09-08 17:38:41.779989",
+ "modified": "2026-09-21 17:06:45.305278",
  "modified_by": "Administrator",
  "module": "Blood Bank",
  "name": "Blood Bank Settings",

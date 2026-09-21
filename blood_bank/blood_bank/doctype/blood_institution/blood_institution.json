@@ -75,10 +75,11 @@
    "unique": 1
   },
   {
+   "default": "Partner Hospital",
    "fieldname": "institution_type",
    "fieldtype": "Select",
    "label": "Institution Type",
-   "options": "National Authority\nRegional Branch\nHospital Blood Bank\nStandalone Blood Bank\nCollection Center",
+   "options": "NBTS Branch\nPartner Hospital",
    "reqd": 1
   },
   {
@@ -146,7 +147,7 @@
  "index_web_pages_for_search": 1,
  "is_tree": 1,
  "links": [],
- "modified": "2026-09-21 13:02:44.166201",
+ "modified": "2026-09-21 17:01:13.428453",
  "modified_by": "Administrator",
  "module": "Blood Bank",
  "name": "Blood Institution",
