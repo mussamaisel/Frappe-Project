@@ -14,7 +14,9 @@
   "column_break_eb4n",
   "start_datetime",
   "end_datetime",
-  "target_units"
+  "target_units",
+  "latitude",
+  "longitude"
  ],
  "fields": [
   {
@@ -66,12 +68,22 @@
   {
    "fieldname": "column_break_eb4n",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Float",
+   "label": "Latitude"
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Float",
+   "label": "Longitude"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-09-16 09:28:02.661114",
+ "modified": "2026-09-21 13:01:56.858205",
  "modified_by": "Administrator",
  "module": "Blood Bank",
  "name": "Donation Camp",
