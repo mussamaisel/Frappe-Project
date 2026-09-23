@@ -24,7 +24,8 @@
   "last_donation_date",
   "next_eligible_date",
   "total_donations",
-  "linked_user_account"
+  "linked_user_account",
+  "data_consent"
  ],
  "fields": [
   {
@@ -55,7 +56,8 @@
   {
    "fieldname": "phone",
    "fieldtype": "Phone",
-   "label": "Phone"
+   "label": "Phone",
+   "reqd": 1
   },
   {
    "fieldname": "email",
@@ -82,7 +84,7 @@
    "fieldname": "blood_group",
    "fieldtype": "Select",
    "label": "Blood Group",
-   "options": "A+\nA-\nB+\nB-\nAB+\nAB-\nO+\nO-"
+   "options": "Unknown\nA+\nA-\nB+\nB-\nAB+\nAB-\nO+\nO-"
   },
   {
    "fieldname": "weight_kg",
@@ -135,12 +137,18 @@
    "fieldtype": "Link",
    "label": "Linked User Account",
    "options": "User"
+  },
+  {
+   "default": "0",
+   "fieldname": "data_consent",
+   "fieldtype": "Check",
+   "label": "I agree to the Donor Terms & Privacy Policy"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-09-11 09:51:09.427891",
+ "modified": "2026-09-22 12:20:06.597906",
  "modified_by": "Administrator",
  "module": "Blood Bank",
  "name": "Donor",

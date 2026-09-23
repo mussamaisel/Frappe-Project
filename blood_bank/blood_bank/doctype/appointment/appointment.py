@@ -11,8 +11,7 @@ class Appointment(Document):
         self.auto_link_donor()
 
     def auto_link_donor(self):
-        user_type = frappe.db.get_value("User", frappe.session.user, "user_type")
-        if user_type != "Website User":
+        if "Donator" not in frappe.get_roles(frappe.session.user):
             return
 
         own_donor = frappe.db.get_value("Donor", {"linked_user_account": frappe.session.user}, "name")

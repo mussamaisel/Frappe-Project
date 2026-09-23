@@ -1,0 +1,62 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"JFj1QA-IcN\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Donor Workspace</span>\",\"col\":12}},{\"id\":\"jlGu242-8W\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Donor\",\"col\":3}},{\"id\":\"R_p1WHtE_o\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Appointment\",\"col\":3}},{\"id\":\"dSdExdVEFD\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Blood Collection\",\"col\":3}}]",
+ "creation": "2026-09-23 10:41:32.295716",
+ "custom_blocks": [
+  {
+   "custom_block_name": ""
+  }
+ ],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "share-people",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Donor Workspace",
+ "links": [],
+ "modified": "2026-09-23 15:33:27.345430",
+ "modified_by": "Administrator",
+ "module": "Blood Bank",
+ "name": "Donor Workspace",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Donator"
+  }
+ ],
+ "sequence_id": 28.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Donor",
+   "link_to": "Donor",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Appointment",
+   "link_to": "Appointment",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Blood Collection",
+   "link_to": "Blood Collection",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Donor Workspace"
+}
