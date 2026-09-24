@@ -19,9 +19,6 @@
   "address",
   "phone",
   "email",
-  "registration_status",
-  "verified_by",
-  "verification_date",
   "stock_visible_publicly",
   "latitude",
   "longitude"
@@ -79,7 +76,7 @@
    "fieldname": "institution_type",
    "fieldtype": "Select",
    "label": "Institution Type",
-   "options": "NBTS Branch\nPartner Hospital",
+   "options": "National Authority\nNBTS Branch\nPartner Hospital",
    "reqd": 1
   },
   {
@@ -109,24 +106,6 @@
    "options": "Email"
   },
   {
-   "default": "Pending",
-   "fieldname": "registration_status",
-   "fieldtype": "Select",
-   "label": "Registration Status",
-   "options": "Pending\nApproved\nRejected"
-  },
-  {
-   "fieldname": "verified_by",
-   "fieldtype": "Link",
-   "label": "Verified By",
-   "options": "User"
-  },
-  {
-   "fieldname": "verification_date",
-   "fieldtype": "Date",
-   "label": "Verification Date"
-  },
-  {
    "default": "0",
    "fieldname": "stock_visible_publicly",
    "fieldtype": "Check",
@@ -147,7 +126,7 @@
  "index_web_pages_for_search": 1,
  "is_tree": 1,
  "links": [],
- "modified": "2026-09-21 17:01:13.428453",
+ "modified": "2026-09-24 15:02:21.713211",
  "modified_by": "Administrator",
  "module": "Blood Bank",
  "name": "Blood Institution",

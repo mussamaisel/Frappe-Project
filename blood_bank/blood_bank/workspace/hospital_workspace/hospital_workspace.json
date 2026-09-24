@@ -1,6 +1,11 @@
 {
- "charts": [],
- "content": "[{\"id\":\"-2UiicCLbv\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Hospital Workspace</span>\",\"col\":12}},{\"id\":\"GQxz0j3Zsu\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Blood Request\",\"col\":3}},{\"id\":\"gYNATbcjI9\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Blood Issue\",\"col\":3}},{\"id\":\"0NSZ-i-fWI\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Cross Match Test\",\"col\":3}}]",
+ "charts": [
+  {
+   "chart_name": "Blood Requests Over Time",
+   "label": "Blood Requests Over Time"
+  }
+ ],
+ "content": "[{\"id\":\"-2UiicCLbv\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Hospital Workspace</span>\",\"col\":12}},{\"id\":\"qJ4mlxNs5X\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"rREB6qc_Gf\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Blood Requests Over Time\",\"col\":12}},{\"id\":\"PvZEf6rqCX\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"tQj_CEvEs1\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"My Blood Stock\",\"col\":3}},{\"id\":\"7xtmc4MTxN\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Pending Blood Requests\",\"col\":3}},{\"id\":\"5tUVVkV2W7\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Approved Awaiting Delivery\",\"col\":3}},{\"id\":\"mwIhM95xrD\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"PBd_tEs91X\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Pending Requests\",\"col\":4}},{\"id\":\"lhK3YB8Qqa\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Current Stock\",\"col\":4}},{\"id\":\"49gmwyCC50\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"GQxz0j3Zsu\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Blood Request\",\"col\":3}},{\"id\":\"Y36WkA3X_B\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Donor\",\"col\":3}},{\"id\":\"gYNATbcjI9\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Blood Issue\",\"col\":3}},{\"id\":\"0NSZ-i-fWI\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Cross Match Test\",\"col\":3}},{\"id\":\"5K92SK6FDY\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Blood Screening Test\",\"col\":3}},{\"id\":\"htNQv2kUHi\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Transfusion Reaction Report\",\"col\":3}},{\"id\":\"6OMftuN-bZ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Blood Collection\",\"col\":3}},{\"id\":\"PwbWP2NdUZ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Blood Unit\",\"col\":3}},{\"id\":\"riKz0CkDbc\",\"type\":\"spacer\",\"data\":{\"col\":12}}]",
  "creation": "2026-09-23 10:43:32.806404",
  "custom_blocks": [],
  "docstatus": 0,
@@ -13,18 +18,42 @@
  "is_hidden": 0,
  "label": "Hospital Workspace",
  "links": [],
- "modified": "2026-09-23 11:17:48.669474",
+ "modified": "2026-09-24 17:17:32.501558",
  "modified_by": "Administrator",
  "module": "Blood Bank",
  "name": "Hospital Workspace",
- "number_cards": [],
+ "number_cards": [
+  {
+   "label": "My Blood Stock",
+   "number_card_name": "My Blood Stock"
+  },
+  {
+   "label": "Pending Blood Requests",
+   "number_card_name": "Pending Blood Requests"
+  },
+  {
+   "label": "Approved Awaiting Delivery",
+   "number_card_name": "Approved Awaiting Delivery"
+  }
+ ],
  "owner": "Administrator",
  "parent_page": "",
  "public": 1,
- "quick_lists": [],
+ "quick_lists": [
+  {
+   "document_type": "Blood Request",
+   "label": "Pending Requests",
+   "quick_list_filter": "[]"
+  },
+  {
+   "document_type": "Blood Unit",
+   "label": "Current Stock",
+   "quick_list_filter": "[[\"Blood Unit\",\"status\",\"=\",\"Available\",false]]"
+  }
+ ],
  "roles": [
   {
-   "role": "Institution Manager"
+   "role": "Hospital Manager"
   }
  ],
  "sequence_id": 29.0,
@@ -40,6 +69,14 @@
   {
    "color": "Grey",
    "doc_view": "List",
+   "label": "Donor",
+   "link_to": "Donor",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
    "label": "Blood Issue",
    "link_to": "Blood Issue",
    "stats_filter": "[]",
@@ -48,8 +85,40 @@
   {
    "color": "Grey",
    "doc_view": "List",
+   "label": "Blood Screening Test",
+   "link_to": "Blood Screening Test",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
    "label": "Cross Match Test",
    "link_to": "Cross Match Test",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Transfusion Reaction Report",
+   "link_to": "Transfusion Reaction Report",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Blood Collection",
+   "link_to": "Blood Collection",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Blood Unit",
+   "link_to": "Blood Unit",
    "stats_filter": "[]",
    "type": "DocType"
   }

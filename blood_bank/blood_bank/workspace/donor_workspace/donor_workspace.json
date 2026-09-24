@@ -1,12 +1,13 @@
 {
- "charts": [],
- "content": "[{\"id\":\"JFj1QA-IcN\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Donor Workspace</span>\",\"col\":12}},{\"id\":\"jlGu242-8W\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Donor\",\"col\":3}},{\"id\":\"R_p1WHtE_o\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Appointment\",\"col\":3}},{\"id\":\"dSdExdVEFD\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Blood Collection\",\"col\":3}}]",
- "creation": "2026-09-23 10:41:32.295716",
- "custom_blocks": [
+ "charts": [
   {
-   "custom_block_name": ""
+   "chart_name": "My Donations Over Time",
+   "label": "My Donations Over Time"
   }
  ],
+ "content": "[{\"id\":\"JFj1QA-IcN\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Donor Workspace</span>\",\"col\":12}},{\"id\":\"xVMTGOu6rV\",\"type\":\"chart\",\"data\":{\"chart_name\":\"My Donations Over Time\",\"col\":12}},{\"id\":\"FVFOcnFt72\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"jlGu242-8W\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Donor\",\"col\":3}},{\"id\":\"R_p1WHtE_o\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Appointment\",\"col\":3}},{\"id\":\"dSdExdVEFD\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Blood Collection\",\"col\":3}},{\"id\":\"aO2QCxgfxN\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"RPKsbsRghv\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"My Total Donations\",\"col\":4}},{\"id\":\"E0pxLocHtp\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"My Upcoming Appointments\",\"col\":4}},{\"id\":\"bV7Tps7rPB\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"CBiHLVi7VX\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"My Appointments\",\"col\":4}},{\"id\":\"JNTh64U1BI\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"My Donation History\",\"col\":4}}]",
+ "creation": "2026-09-23 10:41:32.295716",
+ "custom_blocks": [],
  "docstatus": 0,
  "doctype": "Workspace",
  "for_user": "",
@@ -17,15 +18,35 @@
  "is_hidden": 0,
  "label": "Donor Workspace",
  "links": [],
- "modified": "2026-09-23 15:33:27.345430",
+ "modified": "2026-09-24 09:24:27.549795",
  "modified_by": "Administrator",
  "module": "Blood Bank",
  "name": "Donor Workspace",
- "number_cards": [],
+ "number_cards": [
+  {
+   "label": "My Upcoming Appointments",
+   "number_card_name": "My Upcoming Appointments"
+  },
+  {
+   "label": "My Total Donations",
+   "number_card_name": "My Total Donations"
+  }
+ ],
  "owner": "Administrator",
  "parent_page": "",
  "public": 1,
- "quick_lists": [],
+ "quick_lists": [
+  {
+   "document_type": "Appointment",
+   "label": "My Appointments",
+   "quick_list_filter": "[]"
+  },
+  {
+   "document_type": "Blood Collection",
+   "label": "My Donation History",
+   "quick_list_filter": "[]"
+  }
+ ],
  "roles": [
   {
    "role": "Donator"
