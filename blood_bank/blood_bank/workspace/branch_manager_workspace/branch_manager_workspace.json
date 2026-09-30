@@ -1,0 +1,92 @@
+{
+ "charts": [
+  {
+   "chart_name": "Requests Received Over Time",
+   "label": "Requests Received Over Time"
+  }
+ ],
+ "content": "[{\"id\":\"D4PY4I7OXf\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Branch Manager Workspace</span>\",\"col\":12}},{\"id\":\"pBxl3z8ZZp\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Blood Requests Awaiting Action\",\"col\":4}},{\"id\":\"AtHGK0NVnK\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Blood Units Available\",\"col\":4}},{\"id\":\"vnmv9znTYi\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Tota Donation Camps\",\"col\":4}},{\"id\":\"lBiMPF9o8J\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"G9ydyEvmQy\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Requests Received Over Time\",\"col\":12}},{\"id\":\"UTRFOXCG0c\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"tnlvMPW9ev\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Blood Institution\",\"col\":3}},{\"id\":\"jDoPdUjMWw\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Donation Camp\",\"col\":3}},{\"id\":\"_VZK8PDHA7\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Donor\",\"col\":3}},{\"id\":\"28QbB8jesi\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Blood Request\",\"col\":3}},{\"id\":\"Z_o1rUYaPD\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Blood Issue\",\"col\":3}}]",
+ "creation": "2026-09-30 12:19:51.128873",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "dialpad",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Branch Manager Workspace",
+ "links": [],
+ "modified": "2026-09-30 14:23:12.316229",
+ "modified_by": "Administrator",
+ "module": "Blood Bank",
+ "name": "Branch Manager Workspace",
+ "number_cards": [
+  {
+   "label": "Blood Requests Awaiting Action",
+   "number_card_name": "Blood Requests Awaiting Action"
+  },
+  {
+   "label": "Tota Donation Camps",
+   "number_card_name": "Tota Donation Camps"
+  },
+  {
+   "label": "Total Blood Units Available",
+   "number_card_name": "Total Blood Units Available"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Branch Manager"
+  }
+ ],
+ "sequence_id": 31.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Blood Institution",
+   "link_to": "Blood Institution",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Donation Camp",
+   "link_to": "Donation Camp",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Donor",
+   "link_to": "Donor",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Blood Request",
+   "link_to": "Blood Request",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Blood Issue",
+   "link_to": "Blood Issue",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Branch Manager Workspace"
+}

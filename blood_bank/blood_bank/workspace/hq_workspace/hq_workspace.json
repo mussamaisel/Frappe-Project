@@ -1,0 +1,113 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"VDokJtHJjQ\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">HQ Workspace</span>\",\"col\":12}},{\"id\":\"MeuugA4lL5\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"Yt7BjzwK07\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Registered Institutions\",\"col\":3}},{\"id\":\"EuJYLZLExc\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Blood Units Available\",\"col\":3}},{\"id\":\"KWOWxbs7vN\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Blood Requests\",\"col\":3}},{\"id\":\"E7-qBqyPO4\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Pending Approvals Nationwide\",\"col\":3}},{\"id\":\"x6W95yER7I\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"LOYRMyJtI4\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"National Blood Overview\",\"col\":3}},{\"id\":\"t3_ok-8b5G\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"kZrEDsjxMW\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Blood Institution\",\"col\":3}},{\"id\":\"DfZRntT_Mh\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Donor\",\"col\":3}},{\"id\":\"iOgdEtiSPU\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Blood Unit\",\"col\":3}},{\"id\":\"47rQT_wLjr\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Blood Request\",\"col\":3}},{\"id\":\"TiOAr83RQK\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Donation Camp\",\"col\":3}},{\"id\":\"I7gUMi-oBd\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Blood Issue\",\"col\":3}},{\"id\":\"wgG1A-SNX3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Blood Bank Settings\",\"col\":3}}]",
+ "creation": "2026-09-25 16:33:39.864679",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "image-view",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "HQ Workspace",
+ "links": [],
+ "modified": "2026-09-30 09:28:49.675432",
+ "modified_by": "Administrator",
+ "module": "Blood Bank",
+ "name": "HQ Workspace",
+ "number_cards": [
+  {
+   "label": "Total Blood Units Available",
+   "number_card_name": "Total Blood Units Available"
+  },
+  {
+   "label": "Registered Institutions",
+   "number_card_name": "Registered Institutions"
+  },
+  {
+   "label": "Total Blood Requests",
+   "number_card_name": "Total Blood Requests"
+  },
+  {
+   "label": "Pending Approvals Nationwide",
+   "number_card_name": "Pending Approvals Nationwide"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Blood Bank Admin"
+  }
+ ],
+ "sequence_id": 30.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "National Blood Overview",
+   "link_to": "National Blood Overview",
+   "type": "Dashboard"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Blood Institution",
+   "link_to": "Blood Institution",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Donor",
+   "link_to": "Donor",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Blood Unit",
+   "link_to": "Blood Unit",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Blood Request",
+   "link_to": "Blood Request",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Donation Camp",
+   "link_to": "Donation Camp",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Blood Issue",
+   "link_to": "Blood Issue",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Blood Bank Settings",
+   "link_to": "Blood Bank Settings",
+   "type": "DocType"
+  }
+ ],
+ "title": "HQ Workspace"
+}

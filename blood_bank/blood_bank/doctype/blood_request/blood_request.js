@@ -1,14 +1,21 @@
+
 // Copyright (c) 2026, JACKSON ANDREW and contributors
 // For license information, please see license.txt
 
 frappe.ui.form.on("Blood Request", {
 	onload(frm) {
+		if (!frappe.user_roles.includes("Blood Bank Admin")) {
+			frm.set_df_property("requesting_institution", "read_only", 1);
+		}
+
 		if (frm.is_new() && !frm.doc.requesting_institution) {
 			frappe.call({
 				method: "blood_bank.blood_bank.doctype.blood_request.blood_request.get_my_institution",
 			}).then((r) => {
 				if (r.message) {
-					frm.set_value("requesting_institution", r.message);
+					frm.set_value("requesting_institution", r.message).then(() => {
+						frm.trigger("apply_institution_logic");
+					});
 				}
 			});
 		}

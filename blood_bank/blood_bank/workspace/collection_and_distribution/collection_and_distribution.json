@@ -1,0 +1,103 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"9VqE33LYYm\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Collection and Distribution</span>\",\"col\":12}},{\"id\":\"LxKhlUh-_n\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"XgJ8fSiN6F\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Today's Appointments\",\"col\":4}},{\"id\":\"LXGEmJM-1U\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Current Stock\",\"col\":4}},{\"id\":\"vaOaaHA7Qf\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Pending Blood Issues\",\"col\":4}},{\"id\":\"0WGqJEjRBE\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"oCsV-v4NU4\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Donor\",\"col\":3}},{\"id\":\"N4YhMDGTFm\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Appointment\",\"col\":3}},{\"id\":\"pS1xpZsqLw\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Blood Collection\",\"col\":3}},{\"id\":\"9Kh9eHkzYR\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Blood Issue\",\"col\":3}},{\"id\":\"krJh52gCqZ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Donor Health Screening\",\"col\":3}},{\"id\":\"PyLHKYY-Cu\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Blood Unit\",\"col\":3}},{\"id\":\"eZDwhVH4mo\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Donation Camp\",\"col\":3}}]",
+ "creation": "2026-09-30 12:56:13.230251",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "both",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Collection and Distribution",
+ "links": [],
+ "modified": "2026-09-30 13:08:52.424415",
+ "modified_by": "Administrator",
+ "module": "Blood Bank",
+ "name": "Collection and Distribution",
+ "number_cards": [
+  {
+   "label": "Today's Appointments",
+   "number_card_name": "Today's Appointments"
+  },
+  {
+   "label": "Current Stock",
+   "number_card_name": "Current Stock"
+  },
+  {
+   "label": "Pending Blood Issues",
+   "number_card_name": "Pending Blood Issues"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Branch Staff"
+  }
+ ],
+ "sequence_id": 33.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Donor",
+   "link_to": "Donor",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Appointment",
+   "link_to": "Appointment",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Blood Collection",
+   "link_to": "Blood Collection",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Blood Issue",
+   "link_to": "Blood Issue",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Donor Health Screening",
+   "link_to": "Donor Health Screening",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Blood Unit",
+   "link_to": "Blood Unit",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Donation Camp",
+   "link_to": "Donation Camp",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Collection and Distribution"
+}
